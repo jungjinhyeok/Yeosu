@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>여수여행지 ver-2</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="./js/function.js"></script>
+</head>
+
+<body>
+  <div id="wrap">
+    <header>
+      <h1>
+        아름답고 신나는 문화가 있는 곳 <br />
+        <span>여수</span>를 소개합니다.
+      </h1>
+
+      <div class="banner_container">
+        <ul class="banner">
+          <li><img src="./images/header1.JPG" alt="돌산대교 야경" /></li>
+          <li><img src="./images/header2.JPG" alt="돌산대교 풍경" /></li>
+          <li><img src="./images/header4.JPG" alt="해상케이블" /></li>
+          <li><img src="./images/header5.JPG" alt="바닷가 풍경" /></li>
+        </ul>
+
+        <a href="#" class="banner-btn prev">이전</a>
+        <a href="#" class="banner-btn next">다음</a>
+
+        <a href="#" class="play pause">일시정지</a>
+      </div>
+
+      <nav>
+        <ul class="gnb">
+          <li class="on"><a href="#">Home<span></span></a></li>
+          <li><a href="#">about 여수</a></li>
+          <li><a href="#">festival</a></li>
+          <li><a href="#">tourist</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section>
+      <h2 class="sr-only">여수소개</h2>
+
+      <article class="introduce">
+        <h3 class="sr-only">about 여수</h3>
+
+        <div class="contents introduce-box">
+          <div class="map">
+            <img src="./images/Yeosu_tourist_map.jpg" alt="여수관광지도" />
+          </div>
+
+          <p class="intro-text">
+            아름다울 려(麗), 물 수(水). 지명에서 알 수 있듯이 여수는 바다가 아름다운 도시예요. 남해 청정 해역과 수많은 유무인도를 품에 안고 있어 육지와 섬을 넘나들며 여행하기 좋아요. 여수
+            곳곳의
+            명소는 드라이브, 산책, 트레킹, 물놀이, 해돋이, 밤 풍경 그 무엇에 있어서도 전국적인 지명도를 갖고 있어요. 특히 ‘여수 밤바다’라는 노래가 있듯이 여수의 밤 풍경은 오랫동안 잊지 못할
+            추억이 될 거예요. 볼거리뿐 아니라 먹거리도 풍성한 도시 여수는 사계절 여행지로 더할 나위 없이 매력적인 곳이에요.
+          </p>
+        </div>
+      </article> <!-- 여수 안내(article1) -->
+
+
+      <article class="festival">
+        <h3 class="sr-only">대표적인 축제</h3>
+
+        <div class="contents festival-box">
+          <div class="festival_thmbs-frame">
+            <ul class="festival_thmbs">
+              <li class="on"><a href="#">거북선 <br /> 축제</a></li>
+              <li><a href="#">불꽃 <br /> 축제</a></li>
+              <li><a href="#">영취산 <br /> 진달래 <br /> 축제</a></li>
+            </ul>
+          </div> <!-- 축제 썸네일-->
+
+          <div class="festival_view-container">
+            <div id="geobukseon" class="festival_view">
+              <div class="f-frame geobukseon-frame">
+                <ul class="f-img geobukseon-img">
+                  <li><img src="./images/geobukseon01.jpg" alt="거북선축제이미지1" /></li>
+                  <li><img src="./images/geobukseon02.jpg" alt="거북선축제이미지2" /></li>
+                  <li><img src="./images/geobukseon03.jpg" alt="거북선축제이미지3" /></li>
+                  <li><img src="./images/geobukseon04.jpg" alt="거북선축제이미지4" /></li>
+                  <li><img src="./images/geobukseon05.jpg" alt="거북선축제이미지5" /></li>
+                </ul>
+
+                <ul class="pagination">
+                  <li class="on"><a href="#"></a></li>
+                  <li><a href="#"></a></li>
+                  <li><a href="#"></a></li>
+                  <li><a href="#"></a></li>
+                  <li><a href="#"></a></li>
+                </ul>
+                <!-- <a href="#" class="indicator indi1 on"></a>
+                <a href="#" class="indicator indi2"></a>
+                <a href="#" class="indicator indi3"></a>
+                <a href="#" class="indicator indi4"></a>
+                <a href="#" class="indicator indi5"></a> -->
+              </div>
+
+              <a href="#" class="btn prev">이전</a>
+              <a href="#" class="btn next">다음</a>
+
+              <p class="f-text geobukseon-text">
+                매년 5월이면 진남제라는 호국문화제전을 통해 임진왜란을 승리로 이끌었던 이순신 장군의 구국정신을 본받고 호국 충절을 기리던 것이 여수거북선축제의 시작으로, 여수거북선대축제는 한때 전국
+                10대
+                향토축제 중의 하나로 꼽히던 진남제를 현대적으로 변모시킨 행사입니다. 축제는 매년 5월 4일을 전후하여 개최되고 있는데, 그 이유는 이순신 장군이 나라를 구하기 위해 첫 출정을 했던
+                1592년
+                5월 4일로 그 날을 기념하기 위함입니다.
+              </p>
+            </div> <!-- 거북선 축제 -->
+
+            <div id="fireworks" class="festival_view">
+              <div class="f-frame fireworks-frame">
+                <ul class="f-img fireworks-img">
+                  <li class="on"><img src="./images/fireworks01.jpg" alt="불꽃축제이미지1" /></li>
+                  <li><img src="./images/fireworks02.jpg" alt="불꽃축제이미지2" /></li>
+                  <li><img src="./images/fireworks03.jpg" alt="불꽃축제이미지3" /></li>
+                  <li><img src="./images/fireworks04.jpg" alt="불꽃축제이미지4" /></li>
+                  <li><img src="./images/fireworks05.jpg" alt="불꽃축제이미지5" /></li>
+                </ul>
+
+                <ul class="pagination">
+                  <li class="on"><a href="#"></a></li>
+                  <li><a href="#"></a></li>
+                  <li><a href="#"></a></li>
+                  <li><a href="#"></a></li>
+                  <li><a href="#"></a></li>
+                </ul>
+                <!-- <a href="#" class="indicator indi1 on"></a>
+                <a href="#" class="indicator indi2"></a>
+                <a href="#" class="indicator indi3"></a>
+                <a href="#" class="indicator indi4"></a>
+                <a href="#" class="indicator indi5"></a> -->
+              </div>
+
+              <a href="#" class="btn prev">이전</a>
+              <a href="#" class="btn next">다음</a>
+
+              <p class="f-text fireworks-text">
+                가수 버스커버스커의 노래에도 소재로 쓰인 여수 밤바다는 낭만으로 가득찬 풍경을 선사한다. 한여름밤 해상에서 펼쳐지는 불꽃쇼는 여수의 야경을 더욱 아기자기하고 다채롭게 해주어 보는이들에게
+                감탄을 자아낸다. 버스킹공연, 시립예술단의 축하공연, 가지각색의 퍼포먼스 부터 뮤지컬등의 콘텐츠를 활용한 메인쇼까지 불꽃의 색만큼이나 다양한 공연또한 준비되어 있으니 여름밤의 추억을
+                장식하기에 훌륭한 축제이다.
+              </p>
+            </div> <!-- 불꽃 축제 -->
+
+            <div id="jindalrae" class="festival_view">
+              <div class="f-frame jindalrae-frame">
+                <ul class="f-img jindalrae-img">
+                  <li class="on"><img src="./images/Jindalrae01.jpg" alt="진달래축제이미지1" /></li>
+                  <li><img src="./images/Jindalrae02.jpg" alt="진달래축제이미지2" /></li>
+                  <li><img src="./images/Jindalrae03.jpg" alt="진달래축제이미지3" /></li>
+                  <li><img src="./images/Jindalrae04.jpg" alt="진달래축제이미지4" /></li>
+                  <li><img src="./images/Jindalrae05.jpg" alt="진달래축제이미지5" /></li>
+                </ul>
+
+                <ul class="pagination">
+                  <li class="on"><a href="#"></a></li>
+                  <li><a href="#"></a></li>
+                  <li><a href="#"></a></li>
+                  <li><a href="#"></a></li>
+                  <li><a href="#"></a></li>
+                </ul>
+                <!-- <a href="#" class="indicator indi1 on"></a>
+                <a href="#" class="indicator indi2"></a>
+                <a href="#" class="indicator indi3"></a>
+                <a href="#" class="indicator indi4"></a>
+                <a href="#" class="indicator indi5"></a> -->
+              </div>
+
+              <a href="#" class="btn prev">이전</a>
+              <a href="#" class="btn next">다음</a>
+
+              <p class="f-text jindalrae-text">
+                우리나라를 대표하는 3대 진달래 군락지 중의 하나인 여수 영취산에서는 매년 4월에 화려한 봄의 축제를 개최하고 있다. 영취산진달래축제는 영취산 자락을 따라 군락을 이룬 분홍색 진달래꽃을
+                즐기기 위한 행사로 많은 이들이 봄꽃의 진수를 보기 위해 여수를 찾는다. 축제에서는 영취산 산신제를 비롯하여 진달래아가씨 선발대회, 영취산 진달래 음악회, 진달래 예술단 공연, 산상
+                콘서트
+                등 다채로운 행사가 봄을 맞이하는 관광객들에게 볼거리를 제공하고 있다.
+              </p>
+            </div> <!-- 영취산 진달래 축제-->
+          </div> <!-- 각 축제 컨텐츠 설명 및 이미지 -->
+        </div> <!-- 축제 컨텐츠 박스 -->
+      </article> <!-- 축제(article2) -->
+
+      <article class="tourist">
+        <h3>관광지</h3>
+
+        <div class="contents tourist-box">
+          <nav class="tourist_nav-frame">
+            <ul class="tourist_nav">
+              <li class="on">
+                <a href="#">
+                  <span class="icon">
+                    <img src="./images/odongdo-icon.jpg" alt="#" />
+                  </span>
+                  <p>오동도</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="icon">
+                    <img src="./images/mural_village-icon.jpg" alt="#" />
+                  </span>
+                  <p>천사벽화골목</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="icon">
+                    <img src="./images/dolsan_park-icon.jpg" alt="#" />
+                  </span>
+                  <p>돌산공원</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="icon">
+                    <img src="./images/hamel_lighthouse-icon.jpg" alt="#" />
+                  </span>
+                  <p>하멜등대</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="icon">
+                    <img src="./images/romantic_cart_bars-icon.jpg" alt="#" />
+                  </span>
+                  <p>낭만포차거리</p>
+                </a>
+              </li>
+            </ul>
+          </nav> <!-- 관광지 썸네일 -->
+
+          <div class="tourist_view-container">
+            <div id="odongdo" class="tourist_view view">
+              <p>오동나무, 동백꽃 그리고 멋진풍경으로 유명한 섬</p>
+
+              <div class="t-frame-container">
+                <div class="t-frame odongdo-frame">
+                  <ul class="t-img odongdo-img">
+                    <li><img src="./images/odongdo_img1.jpg" alt="동백꽃" /></li>
+                    <li><img src="./images/odongdo_img2.jpg" alt="오동도풍경" /></li>
+                    <li><img src="./images/odongdo_road.jpg" alt="오동도산책길" /></li>
+                    <li><img src="./images/odongdo_train.jpg" alt="동백열차" /></li>
+                    <li><img src="./images/odongdo_map.jpg" alt="오동도위치" /></li>
+                  </ul>
+                </div>
+
+                <a href="#" class="btn prev">이전</a>
+                <a href="#" class="btn next">다음</a>
+              </div>
+            </div> <!-- 오동도 -->
+
+            <div id="mural_village" class="tourist_view">
+              <p>다양한 주제의 벽화가 담겨져있는 골목</p>
+
+              <div class="t-frame-container">
+                <div class="t-frame mural_village-frame">
+                  <ul class="t-img mural_village-img">
+                    <li><img src="./images/mural_village-angel.jpg" alt="천사날개" /></li>
+                    <li><img src="./images/mural_village-pegasos.jpg" alt="페가소스" /></li>
+                    <li><img src="./images/mural_village-sea.jpg" alt="바다풍경테마" /></li>
+                    <li><img src="./images/mural_village-geobukseon.jpg" alt="거북선그림" /></li>
+                    <li><img src="./images/mural_village-map.jpg" alt="천사벽화골목위치" /></li>
+                  </ul>
+                </div>
+
+                <a href="#" class="btn prev">이전</a>
+                <a href="#" class="btn next">다음</a>
+              </div>
+            </div> <!-- 천사벽화골목 -->
+
+            <div id="dolsan_park" class="tourist_view">
+              <p>사방이 트여 있어 주변 해양 경관을 즐길 수 있는 장소</p>
+
+              <div class="t-frame-container">
+                <div class="t-frame dolsan_park-frame">
+                  <ul class="t-img dolsan_park-img">
+                    <li><img src="./images/dolsan_park-night1.jpg" alt="돌산공원야경1" /></li>
+                    <li><img src="./images/dolsan_park-night2.jpg" alt="돌산대교야경2" /></li>
+                    <li><img src="./images/dolsan_park-night3.jpg" alt="돌산공원야경3" /></li>
+                    <li><img src="./images/dolsan_park-night4.jpg" alt="돌산공원야경4" /></li>
+                    <li><img src="./images/dolsan_park-map.jpg" alt="돌산공원위치" /></li>
+                  </ul>
+                </div>
+
+                <a href="#" class="btn prev">이전</a>
+                <a href="#" class="btn next">다음</a>
+              </div>
+            </div> <!-- 돌산공원 -->
+
+            <div id="hamel_lighthouse" class="tourist_view">
+              <p>이국적인 정취를 느낄수 있는 빨간색의 하멜 등대</p>
+
+              <div class="t-frame-container">
+                <div class="t-frame hamel_lighthouse-frame">
+                  <ul class="t-img hamel_lighthouse-img">
+                    <li><img src="./images/hamel_lighthouse-img1.jpg" alt="하멜등대" /></li>
+                    <li><img src="./images/hamel_lighthouse-sunset.jpg" alt="하멜등대일몰" /></li>
+                    <li><img src="./images/hamel_lighthouse-img2.jpg" alt="하멜등대와크루즈" /></li>
+                    <li><img src="./images/hamel_lighthouse-night2.jpg" alt="하멜등대야경" /></li>
+                    <li><img src="./images/hamel_lighthouse-map.jpg" alt="하멜등대위치" /></li>
+                  </ul>
+                </div>
+
+                <a href="#" class="btn prev">이전</a>
+                <a href="#" class="btn next">다음</a>
+              </div>
+            </div> <!-- 하멜등대 -->
+
+            <div id="romantic_cart_bars" class="tourist_view">
+              <p>여수의 밤바다를 즐길 수 있는 명소</p>
+
+              <div class="t-frame-container">
+                <div class="t-frame romantic_cart_bars-frame">
+                  <ul class="t-img romantic_cart_bars-img">
+                    <li><img src="./images/romantic_cart_bars-photo.jpg" alt="낭만포차거리포토존" /></li>
+                    <li><img src="./images/romantic_cart_bars-busking.jpg" alt="낭만포차거리버스킹" /></li>
+                    <li><img src="./images/romantic_cart_bars-food1.jpg" alt="딱새우회" /></li>
+                    <li><img src="./images/romantic_cart_bars-food2.jpg" alt="해물삼합" /></li>
+                    <li><img src="./images/romantic_cart_bars-map.jpg" alt="낭만포차거리위치" /></li>
+                  </ul>
+                </div>
+
+                <a href="#" class="btn prev">이전</a>
+                <a href="#" class="btn next">다음</a>
+              </div>
+            </div> <!-- 낭만포차거리 -->
+          </div> <!-- 관광지 이미지-->
+        </div> <!-- 관광지 컨텐츠 박스-->
+      </article> <!-- 관광지(article3) -->
+    </section>
+
+    <footer></footer>
+  </div>
+</body>
+
+</html>

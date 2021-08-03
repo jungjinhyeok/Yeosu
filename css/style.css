@@ -1,0 +1,613 @@
+@charset "utf-8";
+
+header {
+	position: relative;
+}
+
+header > h1 {
+	position: absolute;
+	left: 50%;
+	top: 200px;
+	margin-left: -400px;
+	font-size: 80px;
+	font-family: "Nanum Brush Script";
+	text-align: center;
+}
+
+header > h1 > span {
+	font-family: "Black Han Sans";
+}
+
+header > .banner_container {
+	overflow: hidden;
+	position: relative;
+	height: 1000px;
+}
+
+header > .banner_container > .banner {
+	display: flex;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 400%;
+	height: 1000px;
+	z-index: -100;
+}
+
+header > .banner_container > .banner > li {
+	width: calc(100% / 4);
+}
+
+header > .banner_container > .banner > li > img {
+	display: block;
+	width: 100%;
+	height: 1000px;
+}
+
+/* 이전, 다음버튼 */
+header > .banner_container > .banner-btn {
+	display: block;
+	position: absolute;
+	bottom: 145px;
+	width: 0;
+	height: 0;
+	text-indent: -9999px;
+	border-width: 10px;
+	border-style: solid;
+}
+/* 
+header > .banner_container > .prev {
+	left: calc(50% - 20px);
+	border-color: transparent #fff transparent transparent;
+} */
+
+header > .banner_container > .next {
+	left: calc(50% + 40px);
+	border-color: transparent transparent transparent #fff;
+}
+
+/* 일시정지 버튼 */
+header > .banner_container > .play {
+	display: block;
+	position: absolute;
+	left: calc(50% + 10px);
+	bottom: 145px;
+	width: 20px;
+	height: 20px;
+	text-indent: -9999px;
+	background-image: url(./../images/icons.png);
+	background-position: -62px -24px;
+}
+
+header > .banner_container > .pause {
+	background-position: 0 -57px;
+}
+
+/* 글로벌 네비게이션 */
+header > nav {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 80px;
+	background-color: #00d8ff;
+	z-index: 1000;
+}
+
+header > nav > .gnb {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 1000px;
+	height: 80px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+header > nav > .gnb > li > a {
+	display: block;
+	position: relative;
+	width: max-content;
+	height: 30px;
+	font-size: 20px;
+	line-height: 30px;
+	text-align: center;
+}
+
+header > nav > .gnb > li.on > a,
+header > nav > .gnb > li:hover > a {
+	color: #fff;
+}
+
+header > nav > .gnb > li.on > a:after,
+header > nav > .gnb > li:hover > a:after {
+	display: block;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	border-bottom: 3px solid #fff;
+	content: "";
+}
+
+/* 컨텐츠 공통 css */
+section > article {
+	height: 1000px;
+	background-size: cover;
+	background-position: center center;
+}
+
+section > article > .contents {
+	width: 1200px;
+	margin: 0 auto;
+	padding-top: 80px;
+}
+/* 이전, 다음 버튼 공통 CSS */
+section > article .btn {
+	display: block;
+	position: absolute;
+	top: 0;
+	width: 80px;
+	height: 100px;
+	text-indent: -9999px;
+	background-image: url(./../images/btn_navigation.png);
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+section > article .prev {
+	background-position: -5px -225px;
+}
+
+section > article .prev:hover {
+	background-position: -5px -335px;
+}
+
+section > article .next {
+	background-position: -5px -5px;
+}
+
+section > article .next:hover {
+	background-position: -5px -115px;
+}
+
+/* 여수 안내 컨텐츠 */
+section > .introduce {
+	background-image: url(./../images/odongdo_bgi.jpg);
+}
+
+section > .introduce > .introduce-box {
+	width: 1000px;
+}
+
+section > .introduce > .introduce-box > .map {
+	height: 600px;
+}
+
+section > .introduce > .introduce-box > .map > img {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+section > .introduce > .introduce-box > .intro-text {
+	padding: 10px;
+	color: #fff;
+	font-size: 18px;
+	line-height: 25px;
+	text-shadow: 2px 2px 2px #000;
+	text-align: justify;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* 축제 컨텐츠 */
+section > .festival {
+	background-image: url(./../images/mural_village-bgi.jpg);
+}
+
+section > .festival > .festival-box {
+	position: relative;
+}
+
+/* 축제 썸네일 */
+section > .festival > .festival-box > .festival_thmbs-frame {
+	width: 100px;
+	height: 320px;
+	margin-left: 50px;
+	padding-top: 20px;
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+section > .festival > .festival-box > .festival_thmbs-frame > .festival_thmbs > li {
+	position: relative;
+	width: 80px;
+	height: 80px;
+	margin: 20px auto;
+	background-size: cover;
+	background-position: center center;
+}
+section > .festival > .festival-box > .festival_thmbs-frame > .festival_thmbs > li:nth-of-type(1) {
+	margin-top: 0;
+	background-image: url(./../images/geobukseon01.jpg);
+}
+section > .festival > .festival-box > .festival_thmbs-frame > .festival_thmbs > li:nth-of-type(2) {
+	background-image: url(./../images/fireworks01.jpg);
+}
+section > .festival > .festival-box > .festival_thmbs-frame > .festival_thmbs > li:nth-of-type(3) {
+	margin-bottom: 0;
+	background-image: url(./../images/Jindalrae01.jpg);
+}
+
+section > .festival > .festival-box > .festival_thmbs-frame > .festival_thmbs > li > a {
+	display: none;
+	justify-content: center;
+	align-items: center;
+	height: 80px;
+	color: #fff;
+	font-weight: 600;
+	line-height: 20px;
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.5);
+	border: 2px solid #fff;
+}
+
+section > .festival > .festival-box > .festival_thmbs-frame > .festival_thmbs > li.on > a,
+section > .festival > .festival-box > .festival_thmbs-frame > .festival_thmbs > li:hover > a {
+	display: flex;
+}
+
+section > .festival > .festival-box > .festival_thmbs-frame > .festival_thmbs > li.on:after {
+	display: block;
+	position: absolute;
+	right: -50px;
+	top: calc(50% - 20px);
+	width: 0;
+	border-width: 20px;
+	border-color: transparent transparent transparent #000;
+	border-style: solid;
+	z-index: 500;
+	content: "";
+}
+
+/* 축제 이미지 컨텐츠 */
+section > .festival > .festival-box > .festival_view-container {
+	position: absolute;
+	left: 150px;
+	top: 80px;
+	width: 1000px;
+	height: 760px;
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+section > .festival > .festival-box > .festival_view-container > .festival_view {
+	position: absolute;
+	left: 90px;
+	top: 0;
+	width: 820px;
+	margin: 20px auto;
+}
+
+section > .festival > .festival-box > .festival_view-container > .festival_view:nth-of-type(2),
+section > .festival > .festival-box > .festival_view-container > .festival_view:nth-of-type(3) {
+	display: none;
+}
+
+section > .festival > .festival-box > .festival_view-container > .festival_view > .f-frame {
+	position: relative;
+	overflow: hidden;
+	width: 820px;
+	height: 600px;
+}
+
+section
+	> .festival
+	> .festival-box
+	> .festival_view-container
+	> .festival_view
+	> .f-frame
+	> .f-img {
+	display: flex;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 4100px;
+}
+
+section
+	> .festival
+	> .festival-box
+	> .festival_view-container
+	> .festival_view
+	> .f-frame
+	> .f-img
+	> li {
+	width: 820px;
+}
+
+section
+	> .festival
+	> .festival-box
+	> .festival_view-container
+	> .festival_view
+	> .f-frame
+	> .f-img
+	> li
+	> img {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+/* 페이지네이션 */
+section
+	> .festival
+	> .festival-box
+	> .festival_view-container
+	> .festival_view
+	> .f-frame
+	> .pagination {
+	display: flex;
+	justify-content: space-between;
+	position: absolute;
+	left: calc(50% - 75px);
+	bottom: 20px;
+	width: 150px;
+}
+
+section
+	> .festival
+	> .festival-box
+	> .festival_view-container
+	> .festival_view
+	> .f-frame
+	> .pagination
+	> li {
+	width: 13px;
+	background-image: url(./../images/pagination.png);
+	background-repeat: no-repeat;
+	transform: scale(1.6);
+}
+
+section
+	> .festival
+	> .festival-box
+	> .festival_view-container
+	> .festival_view
+	> .f-frame
+	> .pagination
+	> li.on,
+section
+	> .festival
+	> .festival-box
+	> .festival_view-container
+	> .festival_view
+	> .f-frame
+	> .pagination
+	> li:hover {
+	background-position: 0 -26px;
+}
+
+section
+	> .festival
+	> .festival-box
+	> .festival_view-container
+	> .festival_view
+	> .f-frame
+	> .pagination
+	> li
+	> a {
+	display: block;
+	height: 13px;
+}
+
+/* 이전, 다음 버튼 */
+section > .festival > .festival-box > .festival_view-container > .festival_view > .btn {
+	top: calc(50% - 80px);
+}
+
+section > .festival > .festival-box > .festival_view-container > .festival_view > .prev {
+	left: -85px;
+}
+
+section > .festival > .festival-box > .festival_view-container > .festival_view > .next {
+	right: -85px;
+}
+
+section > .festival > .festival-box > .festival_view-container > .festival_view > .f-text {
+	width: 1000px;
+	padding: 20px 10px;
+	margin: 20px 0 0 -90px;
+	color: #fff;
+	line-height: 20px;
+	text-shadow: 2px 2px 2px #000;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* 관광지 컨텐츠 */
+section > .tourist {
+	position: relative;
+	background-image: url(./../images/header3.JPG);
+}
+
+section > .tourist > h3 {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 145px;
+	text-indent: -9999px;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+section > .tourist > .tourist-box {
+	position: relative;
+	padding: 0;
+}
+
+/* 관광지 썸네일 */
+section > .tourist > .tourist-box > .tourist_nav-frame {
+	position: absolute;
+	left: calc(50% - 500px);
+	top: 10px;
+	width: 1000px;
+}
+
+section > .tourist > .tourist-box > .tourist_nav-frame > .tourist_nav {
+	display: flex;
+	justify-content: space-around;
+	position: absolute;
+	left: calc(50% - 500px);
+	top: 0;
+	width: 1000px;
+}
+
+section > .tourist > .tourist-box > .tourist_nav-frame > .tourist_nav > li > a {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 100px;
+}
+
+section > .tourist > .tourist-box > .tourist_nav-frame > .tourist_nav > li > a > .icon {
+	display: block;
+	overflow: hidden;
+	border-radius: 100px;
+}
+
+section > .tourist > .tourist-box > .tourist_nav-frame > .tourist_nav > li > a > .icon > img {
+	display: block;
+	width: 100%;
+}
+
+section > .tourist > .tourist-box > .tourist_nav-frame > .tourist_nav > li > a > p {
+	position: relative;
+	width: max-content;
+	margin-top: 10px;
+	color: #fff;
+	font-weight: 600;
+}
+section > .tourist > .tourist-box > .tourist_nav-frame > .tourist_nav > li.on > a > p:after,
+section > .tourist > .tourist-box > .tourist_nav-frame > .tourist_nav > li:hover > a > p:after {
+	display: block;
+	position: absolute;
+	left: 0;
+	bottom: -5px;
+	width: 100%;
+	border-bottom: 3px solid #fff;
+	content: "";
+}
+
+/* 관광지 메인 이미지 */
+section > .tourist > .tourist-box > .tourist_view-container {
+	position: absolute;
+	left: calc(50% - 500px);
+	top: 160px;
+	overflow: hidden;
+	width: 1000px;
+	height: 660px;
+}
+
+section > .tourist > .tourist-box > .tourist_view-container > .tourist_view > p {
+	color: #fff;
+	font-size: 40px;
+	font-weight: 600;
+	text-align: center;
+	text-shadow: 2px 2px 2px #000;
+}
+
+section > .tourist > .tourist-box > .tourist_view-container > .tourist_view > .t-frame-container {
+	position: relative;
+	height: 600px;
+	margin: 20px auto;
+	padding-top: 20px;
+	margin-top: 20px;
+	background-color: #000;
+}
+
+section
+	> .tourist
+	> .tourist-box
+	> .tourist_view-container
+	> .tourist_view
+	> .t-frame-container
+	> .t-frame {
+	position: relative;
+	overflow: hidden;
+	width: 800px;
+	height: 560px;
+	margin: 0 auto;
+}
+
+section
+	> .tourist
+	> .tourist-box
+	> .tourist_view-container
+	> .tourist_view
+	> .t-frame-container
+	> .t-frame
+	> .t-img {
+	display: flex;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 4000px;
+	height: 560px;
+}
+
+section
+	> .tourist
+	> .tourist-box
+	> .tourist_view-container
+	> .tourist_view
+	> .t-frame-container
+	> .t-frame
+	> .t-img
+	> li {
+	width: 800px;
+}
+
+section
+	> .tourist
+	> .tourist-box
+	> .tourist_view-container
+	> .tourist_view
+	> .t-frame-container
+	> .t-frame
+	> .t-img
+	> li
+	> img {
+	display: block;
+	width: 100%;
+	height: 560px;
+}
+
+/* 관광지 이전, 다음 버튼 */
+section
+	> .tourist
+	> .tourist-box
+	> .tourist_view-container
+	> .tourist_view
+	> .t-frame-container
+	> .btn {
+	top: calc(50% - 50px);
+	background-color: rgba(255, 255, 255, 0.3);
+}
+
+section
+	> .tourist
+	> .tourist-box
+	> .tourist_view-container
+	> .tourist_view
+	> .t-frame-container
+	> .prev {
+	left: 5px;
+}
+
+section
+	> .tourist
+	> .tourist-box
+	> .tourist_view-container
+	> .tourist_view
+	> .t-frame-container
+	> .next {
+	right: 5px;
+}
